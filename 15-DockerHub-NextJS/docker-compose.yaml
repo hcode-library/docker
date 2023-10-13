@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+    app:
+        image: joaohcode/nextjs
+        container_name: minha_primeira_imagem
+        ports:
+            - 8080:3000

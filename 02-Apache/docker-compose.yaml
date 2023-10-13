@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    apache:
+        image: httpd
+        container_name: meu_servidor_web
+        restart: always
+        ports:
+            - 8080:80
+        volumes:
+            - ./conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+            - ./html:/usr/local/apache2/htdocs
